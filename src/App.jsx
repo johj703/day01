@@ -32,7 +32,7 @@ const App = () => {
         <li>{items[2]}</li> 
         */}
         {items.map(function (item) {
-          return <li>{item}</li>;
+          return <li key={item}>{item}</li>;
         })}
       </ul>
     </div>
