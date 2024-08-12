@@ -25,6 +25,11 @@ const App = () => {
         <button type="button">테스트버튼</button>
         <button type="submit">제출</button>
       </form>
+      <ul>
+        <li>{items[0]}</li>
+        <li>{items[1]}</li>
+        <li>{items[2]}</li>
+      </ul>
     </div>
   );
 };
