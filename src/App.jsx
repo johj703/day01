@@ -22,7 +22,8 @@ const App = () => {
 
       <form onSubmit={addNewItem}>
         <input />
-        <button>추가</button>
+        <button type="button">테스트버튼</button>
+        <button type="submit">제출</button>
       </form>
     </div>
   );
