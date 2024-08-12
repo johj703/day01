@@ -11,6 +11,9 @@ const App = () => {
 
   const addNewItem = () => {
     alert("새로운 아이템 추가하는 함수가 호출됐어요!");
+
+    // input 창에 들어있는 text
+    setItems(새로운배열);
   };
 
   return (
