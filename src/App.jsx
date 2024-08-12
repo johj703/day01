@@ -20,6 +20,13 @@ function App() {
         <li>{secondItem}</li>
         <li>{thirdItem}</li>
       </ul>
+      <button
+        onClick={() => 
+          setUser({name: "김철수", age: 30})
+        }
+      >
+        변경하기 함수
+      </button>
     </div>
   );
 }
