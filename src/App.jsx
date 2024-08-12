@@ -30,7 +30,10 @@ const App = () => {
       <form onSubmit={addNewItem}>
         <input
           value={inputFruit}
-          // onChange = {}
+          onChange={(e) => {
+            const newText = e.target.value;
+            setInputFruit(newText);
+          }}
         />
         <button type="button">테스트버튼</button>
         <button type="submit">제출</button>
