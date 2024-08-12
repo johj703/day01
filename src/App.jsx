@@ -62,6 +62,9 @@ const App = () => {
         onClick={() => {
           // 이 부분 완성
           // 사과, 바나나, 오렌지 출력(console.log())
+          items.forEach(function (item) {
+            console.log(item);
+          });
         }}
       >
         콘솔로그 출력 버튼!
