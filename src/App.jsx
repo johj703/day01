@@ -7,7 +7,25 @@ const App = () => {
   });
   const [items, setItems] = useState(["사과", "바나나", "오렌지"]);
 
-  return <div>App</div>;
+  const { name, age } = user;
+
+  return (
+    <div>
+      <h1>사용자 정보</h1>
+      <p>이름: {name}</p>
+      <p>나이: {age}</p>
+      <h2>사용자의 아이템 목록</h2>
+
+      <form
+        onSubmit={() => {
+          alert("이벤트");
+        }}
+      >
+        <input />
+        <button>추가</button>
+      </form>
+    </div>
+  );
 };
 
 export default App;
