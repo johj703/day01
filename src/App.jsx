@@ -16,8 +16,8 @@ const App = () => {
   const addNewItem = () => {
     alert("새로운 아이템 추가하는 함수가 호출됐어요!");
 
-    // input 창에 들어있는 text
-    // setItems(새로운배열);
+    // 원래 있던 items 배열에서 inputFruit의 값을 끼워 넣어서
+    // setItems를 해주면 되는 구나!
   };
 
   return (
