@@ -5,7 +5,16 @@ const App = () => {
     name: "홍길동",
     age: 25,
   });
-  const [items, setItems] = useState(["사과", "바나나", "오렌지"]);
+  const [items, setItems] = useState([
+    "사과",
+    "바나나",
+    "오렌지",
+    "포도",
+    "감귤",
+    "망고",
+    "수박",
+    "딸기",
+  ]);
   const [inputFruit, setInputFruit] = useState("");
 
   const { name, age } = user;
