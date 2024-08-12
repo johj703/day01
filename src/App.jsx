@@ -26,9 +26,14 @@ const App = () => {
         <button type="submit">제출</button>
       </form>
       <ul>
+        {/* 
         <li>{items[0]}</li>
         <li>{items[1]}</li>
-        <li>{items[2]}</li>
+        <li>{items[2]}</li> 
+        */}
+        {items.map(function (item) {
+          return <li>{item}</li>;
+        })}
       </ul>
     </div>
   );
