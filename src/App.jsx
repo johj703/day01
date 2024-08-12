@@ -13,11 +13,19 @@ const App = () => {
   // input을 관리하기 위해서는 2가지!
   // value, onChange
 
-  const addNewItem = () => {
+  const addNewItem = (e) => {
+    e.preventDefault();
     alert("새로운 아이템 추가하는 함수가 호출됐어요!");
 
     // 원래 있던 items 배열에서 inputFruit의 값을 끼워 넣어서
     // setItems를 해주면 되는 구나!
+    console.log("inputFruits => ", inputFruit);
+
+    // (1) 새로운 배열
+    const newArr = [...items, inputFruit];
+    console.log(newArr);
+
+    setItems(newArr);
   };
 
   return (
