@@ -52,9 +52,11 @@ const App = () => {
         <li>{items[1]}</li>
         <li>{items[2]}</li> 
         */}
-        {items.map(function (item) {
-          return <li key={item}>{item}</li>;
-        })}
+        {items
+          .filter((i) => i !== "사과")
+          .map((item) => {
+            <li key={item}>{item}</li>;
+          })}
       </ul>
     </div>
   );
