@@ -9,6 +9,9 @@ const App = () => {
 
   const { name, age } = user;
 
+  // input을 관리하기 위해서는 2가지!
+  // value, onChange
+
   const addNewItem = () => {
     alert("새로운 아이템 추가하는 함수가 호출됐어요!");
 
