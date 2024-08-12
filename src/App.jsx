@@ -58,6 +58,14 @@ const App = () => {
             <li key={item}>{item}</li>;
           })}
       </ul>
+      <button
+        onClick={() => {
+          // 이 부분 완성
+          // 사과, 바나나, 오렌지 출력(console.log())
+        }}
+      >
+        콘솔로그 출력 버튼!
+      </button>
     </div>
   );
 };
