@@ -6,6 +6,7 @@ const App = () => {
     age: 25,
   });
   const [items, setItems] = useState(["사과", "바나나", "오렌지"]);
+  const [inputFruit, setInputFruit] = useState("aaa");
 
   const { name, age } = user;
 
@@ -27,7 +28,10 @@ const App = () => {
       <h2>사용자의 아이템 목록</h2>
 
       <form onSubmit={addNewItem}>
-        <input />
+        <input
+          value={inputFruit}
+          // onChange = {}
+        />
         <button type="button">테스트버튼</button>
         <button type="submit">제출</button>
       </form>
