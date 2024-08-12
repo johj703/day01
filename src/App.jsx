@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Todo from "./Todo";
 
 const App = () => {
   const [user, setUser] = useState({
@@ -39,6 +40,7 @@ const App = () => {
 
   return (
     <div>
+      <Todo />
       <h1>사용자 정보</h1>
       <p>이름: {name}</p>
       <p>나이: {age}</p>
@@ -64,7 +66,26 @@ const App = () => {
         {items
           .filter((i) => i !== "사과")
           .map((item) => {
-            <li key={item}>{item}</li>;
+            <li key={item}>
+              {item}{" "}
+              <button
+                onClick={() => {
+                  alert(item);
+                  // setItems를 사용해야 한다!
+                  // 1. 삭제된 리스트 생성
+                  // 원래 리스트에서  item을 빼주면 된다.
+                  const filteredItems = items.filter(function (아이템) {
+                    if (아이템 === item) {
+                      return false;
+                    } else {
+                      return true;
+                    }
+                  });
+
+                  // 2. setItems 사용
+                }}
+              ></button>
+            </li>;
           })}
       </ul>
       <button
